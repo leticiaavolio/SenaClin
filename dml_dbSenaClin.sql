@@ -19,3 +19,32 @@ INSERT INTO paciente VALUES
 ('5','Carla Coimbra','32589645521','São Vicente','Rua','Manoel Covas Raia','724','Casa 2','13996452358'),
 ('6','Arthur Albuquerque','35268261149','Santos','Rua','Alfredo Ximenes','4','','13997204536');
 
+/*exercicio 3*/
+
+SELECT * FROM dentista
+
+INSERT INTO dentista(nome, cro, especialidade, telefone, celular) VALUES 
+('Davi Dalagnoli','SP-20125','Implantodontia','32354965','13995263847'),
+('Eduarda Escobar','MG-54968','Ortodontia','32358694','13994025645'),
+('Francisco Franco','RJ-45826','Geral','32359684','13997258634'),
+('Sueli Silva','BA-45623','Periodontia','32568941','1399820563');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
