@@ -52,9 +52,13 @@ SELECT * FROM consulta;
 
 UPDATE consulta SET dataConsulta='2024-03-29',horaConsulta='14:30' WHERE codConsulta='2';
 
+/*exercicio 7 - 7.	Atualizar a consulta do dentista de especialidade ortodontia, mudando o tipo de consulta para Tratamento e inserindo uma observação do dentista com o seguinte texto: “Tratamento será realizado em 10 consultas. Prioridade: Moderada. Remédio aplicado: Ponstan, caso sinta dores”*/
 
+SELECT * FROM consulta;
 
-
+UPDATE consulta SET tipoConsulta='Tratamento',
+observacao='Tratamento será realizado em 10 consultas. Prioridade: Moderada. 
+Remédio aplicado: Ponstan, caso sinta dores' WHERE codConsulta='1';
 
 
 
