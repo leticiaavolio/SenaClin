@@ -19,6 +19,8 @@ INSERT INTO paciente VALUES
 ('5','Carla Coimbra','32589645521','São Vicente','Rua','Manoel Covas Raia','724','Casa 2','13996452358'),
 ('6','Arthur Albuquerque','35268261149','Santos','Rua','Alfredo Ximenes','4','','13997204536');
 
+UPDATE paciente SET complemento=NULL WHERE complemento='';
+
 /*exercicio 3*/
 
 SELECT * FROM dentista
@@ -59,6 +61,17 @@ SELECT * FROM consulta;
 UPDATE consulta SET tipoConsulta='Tratamento',
 observacao='Tratamento será realizado em 10 consultas. Prioridade: Moderada. 
 Remédio aplicado: Ponstan, caso sinta dores' WHERE codConsulta='1';
+
+/*exercicio 8 - 8.	Selecionar nome e telefone de todo os pacientes que residem em Santos, em ordem alfabética*/
+
+SELECT * FROM paciente;
+
+SELECT nome, telefone FROM paciente WHERE cidade='Santos' ORDER BY nome ASC;
+
+
+
+
+
 
 
 
