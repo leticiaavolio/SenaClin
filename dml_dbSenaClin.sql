@@ -29,9 +29,15 @@ INSERT INTO dentista(nome, cro, especialidade, telefone, celular) VALUES
 ('Francisco Franco','RJ-45826','Geral','32359684','13997258634'),
 ('Sueli Silva','BA-45623','Periodontia','32568941','1399820563');
 
+/*exercicio 4 - 4.	Inserir 3 consultas, sendo 1 para o dentista que cuida de Ortodontia e 2 para o dentista cuja especialidade é Geral. O tipo de todas elas será Avaliação.*/
 
+SELECT * FROM consulta;
+SELECT * FROM dentista;
+SELECT * FROM paciente;
 
-
+INSERT INTO consulta (dataConsulta,horaConsulta,tipoConsulta,codPaciente,codDentista,observacao) VALUES
+('2024-02-23','15:00','Avaliação','3','2',''),('2024-03-25','17:00','Avaliação','2','3',''),
+('2024-04-09','14:00','Avaliação','5','3','');
 
 
 
