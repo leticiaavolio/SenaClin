@@ -77,7 +77,14 @@ SELECT * FROM dentista;
 SELECT dentista.nome, dataConsulta, paciente.nome, paciente.telefone FROM dentista 
 INNER JOIN consulta ON dentista.codDentista=consulta.codDentista 
 INNER JOIN paciente ON consulta.codPaciente=paciente.codPaciente
-WHERE consulta.codDentista=dentista.codDentista;
+
+/*exercicio 10 -	Selecionar o nome do dentista, a data da consulta e o tipo da consulta, MESMO quando os dentistas não possuam consultas; */
+
+SELECT * FROM consulta;
+SELECT * FROM dentista;
+
+SELECT dentista.nome, dataConsulta, tipoConsulta FROM dentista 
+LEFT JOIN consulta ON dentista.codDentista=consulta.codDentista;
 
 
 
