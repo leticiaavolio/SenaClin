@@ -39,7 +39,12 @@ INSERT INTO consulta (dataConsulta,horaConsulta,tipoConsulta,codPaciente,codDent
 ('2024-02-23','15:00','Avaliação','3','2',''),('2024-03-25','17:00','Avaliação','2','3',''),
 ('2024-04-09','14:00','Avaliação','5','3','');
 
+/*exercicio 5 - 5.	Atualizar todos os dados, exceto nome e cro, do dentista que cuida de implantodontia, mudando sua especialidade para Geral;*/
 
+SELECT * FROM dentista;
+
+UPDATE dentista SET telefone='32359864',celular='13996024853',especialidade='Geral' 
+WHERE especialidade='Implantodontia';
 
 
 
