@@ -99,8 +99,11 @@ SELECT * FROM consulta;
 
 SELECT COUNT(codConsulta) AS 'Quant. Consultas' FROM consulta WHERE MONTH(dataConsulta)='04';
 
+/*exercicio 13 -13.	Criar uma query que traga todos os tipos de consulta, agrupadas pela quantidade.*/
 
+SELECT * FROM consulta;
 
+SELECT COUNT(tipoConsulta) AS 'Quant. Tipos',tipoConsulta FROM consulta GROUP BY tipoConsulta;
 
 
 
