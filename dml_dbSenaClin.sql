@@ -93,6 +93,16 @@ SELECT * FROM dentista;
 SELECT COUNT(codDentista) AS 'Quant. Dentista', especialidade 
 FROM dentista GROUP BY especialidade ORDER BY especialidade ASC;
 
+/*exercicio 12 - 12.	Criar uma query que mostre a quantidade de consultas que a clínica possui em determinado período do ano. Escolher um mês que retorne ao menos uma consulta, e incluir o mês como filtro.*/
+
+SELECT * FROM consulta;
+
+SELECT COUNT(codConsulta) AS 'Quant. Consultas' FROM consulta WHERE MONTH(dataConsulta)='04';
+
+
+
+
+
 
 
 
