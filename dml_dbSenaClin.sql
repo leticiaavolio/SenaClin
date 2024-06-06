@@ -138,6 +138,20 @@ SELECT COUNT(tipoConsulta) AS 'Quant. Tipos',tipoConsulta FROM consulta GROUP BY
 
 SELECT * FROM quantTipos;
 
+/*Desafio - Criar uma query que traga quantas consultas cada um dos dentistas realizou ao longo de todo o período,  ordenando as do que atendeu mais pacientes para o que atendeu menos. */
+
+SELECT * FROM consulta;
+SELECT * FROM dentista;
+
+SELECT COUNT(codConsulta), dentista.nome FROM consulta 
+RIGHT JOIN dentista ON consulta.codDentista=dentista.codDentista 
+GROUP BY dentista.codDentista ORDER BY COUNT(codConsulta) DESC;
+
+
+
+
+
+
 
 
 
