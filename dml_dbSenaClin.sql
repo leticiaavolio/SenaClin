@@ -131,10 +131,12 @@ WHERE especialidade=especialidadeDesejada ORDER BY dataConsulta ASC;
 CALL ConsultasPorEspecialidade('Geral')
 CALL ConsultasPorEspecialidade('Ortodontia')
 
+/*exercicio 17 - 17.	Crie uma view similar ao exercício 13. Execute a view para testar.*/
 
+CREATE VIEW quantTipos AS
+SELECT COUNT(tipoConsulta) AS 'Quant. Tipos',tipoConsulta FROM consulta GROUP BY tipoConsulta;
 
-
-
+SELECT * FROM quantTipos;
 
 
 
