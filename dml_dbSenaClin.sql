@@ -109,6 +109,17 @@ SELECT COUNT(tipoConsulta) AS 'Quant. Tipos',tipoConsulta FROM consulta GROUP BY
 
 SELECT COUNT(codPaciente) AS 'Quant. Paciente' FROM paciente;
 
+/*exercicio 15 - 15.	Criar uma query que traga todas as consultas da especialidade implantodontia. Deve vir na query o nome do dentista, o cro, a data da consulta e o nome do paciente, ordenados da data mais atual para a mais antiga.*/
+
+SELECT * FROM dentista;
+SELECT * FROM consulta;
+SELECT * FROM paciente;
+
+SELECT dentista.nome, cro, dataConsulta, paciente.nome FROM consulta 
+INNER JOIN dentista ON consulta.codDentista=dentista.codDentista
+INNER JOIN paciente ON consulta.codPaciente=paciente.codPaciente
+WHERE especialidade='Implantodontia' ORDER BY dataConsulta ASC;
+
 
 
 
