@@ -105,6 +105,9 @@ SELECT * FROM consulta;
 
 SELECT COUNT(tipoConsulta) AS 'Quant. Tipos',tipoConsulta FROM consulta GROUP BY tipoConsulta;
 
+/*exercicio 14 -14.	Criar uma query que traga o número de pacientes que a clínica possui.*/
+
+SELECT COUNT(codPaciente) AS 'Quant. Paciente' FROM paciente;
 
 
 
